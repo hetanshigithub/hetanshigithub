@@ -1,8 +1,8 @@
 # Hetanshi Shah
 
-### Software engineer — Android apps, backend services, AI systems.
+### Frontend-focused software engineer — React, TypeScript and Android.
 
-Kotlin and Jetpack Compose on mobile, Java and Spring Boot on the server, Python for the AI work. Two years shipping production REST APIs before grad school.
+I build interfaces that make hard-to-check things easy to check: React and TypeScript on the web, Kotlin and Jetpack Compose on mobile. I also write the Java and Python backends behind them, and two years of shipping production REST APIs before grad school means I know what the UI is talking to.
 
 📍 New Jersey &nbsp;·&nbsp; 🎓 M.S. Computer Science, Montclair State University — 4.0 GPA, December 2026 &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/hetanshi-shah-96a10b337/) &nbsp;·&nbsp; [Email](mailto:hetanshishahh@gmail.com)
 
@@ -10,7 +10,26 @@ Kotlin and Jetpack Compose on mobile, Java and Spring Boot on the server, Python
 
 ## Selected work
 
-### [Hookshot](https://github.com/hetanshigithub/hookshot) — reliable webhook delivery
+### [Source-checked Q&A](https://github.com/hetanshigithub/source-checked-qa) — an AI answer you can verify
+`React` `TypeScript` `Vite` `TanStack Query` `Vitest`
+
+AI answers are hard to verify, so this interface puts the evidence next to the answer. Each statement is numbered, and selecting one highlights the exact sentence in its source passage. When the documents don't answer the question, it says so instead of showing a confident-looking guess.
+
+- **Exact citations.** The backend returns the character range of every cited sentence and the interface highlights those ranges as given. A statement it can't locate is labelled "Source passage not located", not guessed at.
+- **Honest weak-match state** below a confidence line, plus a retrieval inspector showing every passage, its similarity score and how many statements used it.
+- Upload and remove documents, shareable `?q=` links, and Back/Forward stepping between questions.
+- **56 tests**, axe accessibility checks on the main screens, and a demo mode that runs with no server. The README lists the limits, including that nothing was tested with a screen reader.
+
+### [Sigcheck](https://github.com/hetanshigithub/sigcheck) — find out why a webhook signature fails
+`React` `TypeScript` `Tailwind CSS` `Web Crypto API` `Vitest`
+
+Paste a payload, secret and signature header. Sigcheck says whether the signature is valid and, when it isn't, which common mistake explains it, such as a trailing newline, re-serialized JSON or a base64 secret used as text. Everything runs in the browser, so nothing you paste is sent anywhere.
+
+- Verifies Stripe-style, GitHub-style and plain HMAC signatures, and tries about 400 payload, secret and algorithm variations on a mismatch.
+- Generates a Node or Python verifier, and the tests actually run the generated code against known vectors.
+- 60+ tests with axe accessibility checks.
+
+### [Hookshot](https://github.com/hetanshigithub/hookshot) — reliable webhook delivery (the backend side of the same problem)
 `Java 21` `Spring Boot 3` `PostgreSQL` `Docker`
 
 The machinery behind "we'll POST to your URL when something happens," the way Stripe and GitHub do it. Sending one HTTP request is easy; sending it reliably is the hard part — receivers go down, retries stampede, payloads get forged, and users point webhooks at your internal network.
@@ -62,10 +81,13 @@ Two years at **Dbmares** as a junior software developer: REST APIs and backend r
 
 | | |
 | --- | --- |
+| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white) ![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?logo=reactquery&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white) ![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?logo=testinglibrary&logoColor=white) ![HTML/CSS](https://img.shields.io/badge/HTML_%2F_CSS-E34F26?logo=html5&logoColor=white) |
 | **Android** | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?logo=jetpackcompose&logoColor=white) ![Material 3](https://img.shields.io/badge/Material_3-757575?logo=materialdesign&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?logo=android&logoColor=white) ![DataStore](https://img.shields.io/badge/DataStore-3DDC84?logo=android&logoColor=white) ![MVVM](https://img.shields.io/badge/MVVM-555555) |
 | **Backend** | ![Java](https://img.shields.io/badge/Java_21-ED8B00?logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?logo=springboot&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Flyway](https://img.shields.io/badge/Flyway-CC0000?logo=flyway&logoColor=white) ![REST](https://img.shields.io/badge/REST_APIs-02569B) |
-| **Languages** | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) |
+| **Languages** | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) |
 | **AI / ML** | ![RAG](https://img.shields.io/badge/RAG-412991) ![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white) ![sentence-transformers](https://img.shields.io/badge/sentence--transformers-FFD21E?logo=huggingface&logoColor=black) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white) |
 | **Testing & infra** | ![JUnit](https://img.shields.io/badge/JUnit-25A162?logo=junit5&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white) ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?logo=azuredevops&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white) ![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?logo=sonarqube&logoColor=white) |
 
 ---
+
+**Graduating December 2026 and looking for frontend and software engineering roles (React, TypeScript, Android).** The fastest way to reach me is [email](mailto:hetanshishahh@gmail.com).
