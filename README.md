@@ -17,7 +17,7 @@ An API that recommends Lean In-style peer Circles to a member and explains each 
 
 - **Filter, score, remove duplicates, explain.** Full, inactive and invite-only Circles are never recommended; six weighted signals rank the rest; near-identical Circles collapse into one.
 - **Honest by design.** "Matches your interest" only when it's the Circle's main topic, life-stage Circles only for members who signalled that topic, and photo or profile completeness never affect ranking.
-- **Measured, not assumed.** 27 tests, CI on Node 20 and 22, and an eval that checks all 100 members and reports which Circles never get seen.
+- **Measured, not assumed.** 28 tests, CI on Node 20 and 22, and an eval that checks all 100 members and reports which Circles never get seen.
 - A small demo page shows each member's list the way she'd see it, plus what was left out and why.
 
 ### [Hookshot](https://github.com/hetanshigithub/hookshot) — reliable webhook delivery
