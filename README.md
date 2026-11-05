@@ -1,28 +1,10 @@
 # Hetanshi Shah
 
-### Software Development Engineer: backend APIs, data pipelines, AI evaluation, and React/TypeScript frontends.
+### Software engineer who builds backend systems that hold up, and interfaces that show their work.
 
-I build reliable backend systems and the interfaces on top of them. Over 3+ years I've shipped REST APIs and microservices in Java/Spring Boot, Python data pipelines, and AI evaluation workflows, and I build React/TypeScript frontends that make hard-to-check things easy to check.
+I like the parts of software where "it works on my machine" isn't good enough: queues that survive crashed workers, webhooks that can't be forged, AI answers you can trace back to a source, recommendations that explain themselves. I work across Java/Spring Boot, Python/FastAPI and TypeScript/React, and I measure before I claim: each of the selected projects below has tests, CI, and a README that says what it doesn't do yet.
 
 📍 New York, USA &nbsp;·&nbsp; 🎓 M.S. Computer Science, Montclair State University (4.0 GPA, December 2026) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/hetanshi-shah-96a10b337/) &nbsp;·&nbsp; [Email](mailto:shahhetanshi.work@gmail.com)
-
----
-
-## Experience
-
-**Software Development Engineer · Walmart** · Jan 2026 – Present
-Enterprise AI evaluation and data pipeline operations.
-- Automated Python data pipelines with unit-tested validation, processing 100,000+ operational records a day and removing 15+ hours of manual aggregation each week.
-- SQL and Python analysis of large-scale performance metrics, delivered through Power BI dashboards with 3,000+ monthly user interactions.
-- AI evaluation frameworks that test the reliability, consistency and failure modes of enterprise LLM outputs against structured accuracy baselines.
-- SonarQube static analysis in the CI/CD pipeline, with findings mapped to CWE/CVE categories to cut false-positive vulnerability flags.
-
-**Software Development Engineer · Accenture** · Aug 2022 – Dec 2024
-Cloud-native backend integration and API modernization.
-- High-throughput REST APIs and reporting microservices in Java, Spring Boot and SQL, handling 10,000+ daily transactions with sub-second latency.
-- Azure DevOps CI/CD with Git-based workflows, taking deployment cycles from weeks to days with zero-downtime releases.
-- Production support on systems with 99% uptime SLAs: debugging backend defects and writing runbooks that sped up incident response.
-- Secure data synchronization pipelines and optimized legacy database connections between core microservices.
 
 ---
 
